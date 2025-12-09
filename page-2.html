@@ -5,29 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/velaro-labs/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/velaro-labs/assets/styles-CdzPfgxm.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="#" class="header__logo">
+          Velaro<span class="header__logo-accent">Labs</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">О платформе</a></li>
+              <li class="nav__item"><a href="#practices" class="nav__link">Практики AI</a></li>
+              <li class="nav__item"><a href="#tools" class="nav__link">Инструменты</a></li>
+              <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
+              <li class="nav__item"><a href="#career" class="nav__link">Карьера</a></li>
+              <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+              <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary header__btn">Начать</a>
+          <button class="header__burger" aria-label="Открыть меню">
+              <i data-lucide="menu"></i>
+          </button>
+      </div>
+  </div>
+
+  <div class="mobile-menu">
+      <div class="mobile-menu__content">
+          </div>
   </div>
 </header>
-
 
     <main>
       <div class="container">
@@ -39,19 +51,62 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="#" class="footer__logo">
+                  Velaro<span class="footer__logo-accent">Labs</span>
+              </a>
+              <p class="footer__desc">
+                  Платформа года.<br>
+                  Технологии, которые работают на вас.
+              </p>
+              <p class="footer__copyright">© 2025 Velaro Labs. Все права защищены.</p>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Меню</h3>
+              <ul class="footer__list">
+                  <li><a href="#about" class="footer__link">О платформе</a></li>
+                  <li><a href="#practices" class="footer__link">Практики</a></li>
+                  <li><a href="#blog" class="footer__link">Блог</a></li>
+                  <li><a href="#contact" class="footer__link">Контакты</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Юридическая информация</h3>
+              <ul class="footer__list">
+                  <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                  <li><a href="cookies.html" class="footer__link">Cookie Policy</a></li>
+                  <li><a href="terms.html" class="footer__link">Terms of Use</a></li>
+                  <li><a href="return.html" class="footer__link">Return Policy</a></li>
+                  <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html" class="footer__link">Personal Data</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Контакты</h3>
+              <ul class="footer__contacts">
+                  <li class="footer__contact-item">
+                      <i data-lucide="map-pin" class="footer__icon"></i>
+                      <span>Via Alessandro Volta 14, 20121 Milano, Italy</span>
+                  </li>
+                  <li class="footer__contact-item">
+                      <i data-lucide="mail" class="footer__icon"></i>
+                      <a href="mailto:support@velaro-labs.blog">support@velaro-labs.blog</a>
+                  </li>
+                  <li class="footer__contact-item">
+                      <i data-lucide="phone" class="footer__icon"></i>
+                      <a href="tel:+390212345678">+39 02 1234 5678</a>
+                  </li>
+              </ul>
+              <div class="footer__badge">
+                  Платформа уже доступна в Европе
+              </div>
+          </div>
+      </div>
   </div>
 </footer>
-
   </body>
 </html>
