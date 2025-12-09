@@ -1003,3 +1003,105 @@ h1, h2, h3, h4, h5, h6 {
   outline: 2px solid #EF4444;
   outline-offset: 2px;
 }
+/* --- LEGAL PAGES STYLES --- */
+
+/* Отступ сверху, так как хедер фиксированный */
+.pages {
+  padding-top: calc(var(--header-height) + 60px);
+  padding-bottom: 100px;
+  background-color: #fff; /* Белый фон для читаемости */
+}
+
+/* Ограничиваем ширину текста, чтобы строки не были слишком длинными */
+.text-block {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pages__title {
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: var(--color-text-main);
+  letter-spacing: -0.02em;
+}
+
+.pages__updated {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pages__content h2 {
+  font-size: 28px;
+  margin-top: 48px;
+  margin-bottom: 24px;
+  color: var(--color-text-main);
+}
+
+.pages__content p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #334155; /* Чуть темнее обычного muted для текста статей */
+  margin-bottom: 24px;
+}
+
+.pages__content ul {
+  margin-bottom: 32px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.pages__content li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 16px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+/* Кастомные буллеты списка в цвет бренда */
+.pages__content li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+.pages__content strong {
+  color: var(--color-text-main);
+  font-weight: 700;
+}
+
+.pages__content a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 600;
+}
+
+.pages__content a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+/* Адаптив для юридических страниц */
+@media (max-width: 768px) {
+  .pages__title {
+      font-size: 32px;
+  }
+  .pages__content h2 {
+      font-size: 24px;
+      margin-top: 36px;
+  }
+  .pages__content p,
+  .pages__content li {
+      font-size: 16px;
+  }
+}
